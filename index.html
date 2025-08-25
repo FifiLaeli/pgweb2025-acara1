@@ -5,71 +5,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Acara 1 | HTML CSS </title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ffe6f0, #ffd6eb);
+            margin: 0;
+            padding: 20px;
+            color: #444;
+        }
+
+        main {
+            background: #fff0f6;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e75480 !important;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #ffd6eb;
+        }
+
+        h3 {
+            text-align: center;
+            color: #ff4da6;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        h4 {
+            color: #c2185b;
+            margin-top: 25px;
+            border-left: 6px solid #ff80bf;
+            padding-left: 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, #ffb6c1, #ff4da6);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: #ffe6f2;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            border: 1px solid #ffb6c1;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #ff4da6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #ffd6e7;
+        }
+
+        tr:hover {
+            background: #ffcce0;
+            transition: 0.3s ease;
+        }
+
+        ol {
+            padding-left: 25px;
+            background: #fff5fa;
+            border: 2px dashed #ff80bf;
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        ol li {
+            margin: 6px 0;
+            color: #d63384;
+            font-weight: 500;
+        }
+
+        /* Animasi */
+        h1,
+        h3,
+        h4 {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <!-- Judul -->
         <h1 style="color:brown">Kabupaten Semarang</h1>
+
         <!-- Sub Judul -->
         <h3>Jawa Tengah</h3>
         <hr>
-        <p>Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄 translit. Semarang) adalah
+
+        <p>
+            Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄 translit. Semarang) adalah
             sebuah wilayah kabupaten yang terletak di Provinsi Jawa Tengah, Indonesia. Ibu kotanya adalah Ungaran.
             Kabupaten ini berbatasan dengan Kota Semarang di utara; Kabupaten Demak dan Kabupaten Grobogan di timur;
             Kabupaten Boyolali di timur dan selatan; serta Kabupaten Magelang, Kabupaten Temanggung, dan Kabupaten
             Kendal di barat. Kota Salatiga adalah enklave dari Kabupaten Semarang. Jumlah penduduk Kabupaten Semarang di
             tahun 2021 sebanyak 1.053.094 jiwa,[1] dengan Slogan kabupaten ini adalah sebagai Bumi Serasi yang merupakan
-            akronim dari "Sehat, Rapi, Aman, Sejahtera, dan Indah".</p>
-        <p>Ungaran, ibu kota kabupaten ini, tepat berbatasan dengan Kota Semarang. Bagian timur wilayah kabupaten ini
+            akronim dari "Sehat, Rapi, Aman, Sejahtera, dan Indah".
+        </p>
+
+        <p>
+            Ungaran, ibu kota kabupaten ini, tepat berbatasan dengan Kota Semarang. Bagian timur wilayah kabupaten ini
             merupakan dataran tinggi dan perbukitan yang merupakan bagian dari pegunungan Kendeng. Sungai besar yang
             mengalir adalah Sungai Tuntang. Di bagian barat wilayahnya berupa pegunungan, dengan puncaknya Gunung
             Ungaran (2.050 meter) di perbatasan dengan Kabupaten Kendal, serta Gunung Merbabu (3.141 meter) di barat
-            daya.</p>
-            <hr>
+            daya.
+        </p>
 
-            <!-- Tabel Jumlah Penduduk -->
-             <table>
-                <tr>
-                    <th>No</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Jumlah</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Laki-laki</td>
-                    <td>838.437</td>
+        <hr>
 
-                </tr>
-                    <td>2</td>
-                    <td>Perempuan</td>
-                    <td>856.306</td>
-                </tr>
-             </table>
-             <hr>
-             <!-- List Kecamatan -->
-              <h4>Kecamatan</h4>
-              <ol>
-<li>Ambarawa</li>
-<li>Bancak</li>
-<li>Bandungan</li>
-<li>Bawen</li>
-<li>Bergas</li>
-<li>Bringin</li>
-<li>Getasan</li>
-<li>Jambu</li>
-<li>Kaliwungu</li>
-<li>Kangkung</li>
-<li>Pabelan</li>
-<li>Pringsurat</li>
-<li>Ronggowarsito</li>
-<li>Tuntang</li>
-<li>Tumpang</li>
-<li>Ungaran Barat</li>
-<li>Ungaran Timur</li>
-<li>Mijen</li>
-<li>Pondok Salam</li>
-              </ol>
+        <!-- Tabel Jumlah Penduduk -->
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Jenis Kelamin</th>
+                <th>Jumlah</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Laki-laki</td>
+                <td>838.437</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Perempuan</td>
+                <td>856.306</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- List Kecamatan -->
+        <h4>Kecamatan</h4>
+        <ol>
+            <li>Ambarawa</li>
+            <li>Bancak</li>
+            <li>Bandungan</li>
+            <li>Bawen</li>
+            <li>Bergas</li>
+            <li>Bringin</li>
+            <li>Getasan</li>
+            <li>Jambu</li>
+            <li>Kaliwungu</li>
+            <li>Kangkung</li>
+            <li>Pabelan</li>
+            <li>Pringsurat</li>
+            <li>Ronggowarsito</li>
+            <li>Tuntang</li>
+            <li>Tumpang</li>
+            <li>Ungaran Barat</li>
+            <li>Ungaran Timur</li>
+            <li>Mijen</li>
+            <li>Pondok Salam</li>
+        </ol>
     </main>
 </body>
 
