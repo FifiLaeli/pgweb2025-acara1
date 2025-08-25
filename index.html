@@ -90,21 +90,42 @@
             transition: 0.3s ease;
         }
 
+        /* Baris total dibuat beda */
+        table tr:last-child {
+            background: #ff99cc !important;
+            font-weight: bold;
+            color: #fff;
+        }
+
         ol {
             padding-left: 25px;
-            background: #fff5fa;
-            border: 2px dashed #ff80bf;
-            border-radius: 12px;
-            padding: 15px;
+            background: none;
+            border: none;
         }
 
         ol li {
             margin: 6px 0;
             color: #d63384;
             font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
 
-        /* Animasi */
+        ol li:nth-child(odd) {
+            background: #ffe6f2; /* striping lembut */
+        }
+
+        ol li:nth-child(even) {
+            background: #ffd9ec;
+        }
+
+        ol li:hover {
+            background: #ffb3d9;
+            color: #fff;
+            transform: translateX(5px);
+        }
+
         h1,
         h3,
         h4 {
@@ -164,18 +185,23 @@
             <tr>
                 <td>1</td>
                 <td>Laki-laki</td>
-                <td>838.437</td>
+                <td>542.392</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Perempuan</td>
-                <td>856.306</td>
+                <td>547.375</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Total</td>
+                <td>1.089.767</td>
             </tr>
         </table>
 
         <hr>
 
-        <!-- List Kecamatan -->
+        <!-- Kecamatan -->
         <h4>Kecamatan</h4>
         <ol>
             <li>Ambarawa</li>
